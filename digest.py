@@ -112,7 +112,7 @@ def output(peptides, output_file, protein_name, missed, enzyme):
     sequence line."""
 
     for peptide_num, peptide in enumerate(peptides, 1):
-        print(f"{protein_name} {peptide_num} missed={missed} {enzyme}\n{peptide}", file = output_file)
+        print(f"> {protein_name} {peptide_num} missed={missed} {enzyme}\n{peptide}", file = output_file)
 
 def main():
     """Takes user-specified command-line arguments and executes read_proteins, digest,
